@@ -31,7 +31,7 @@
             box-shadow: 0 20px 40px rgba(0,0,0,0.1);
         }
         .gradient-bg {
-            background: linear-gradient(#a51fa5);
+            background: linear-gradient(purple-400);
         }
         .pulse-animation {
             animation: pulse 2s infinite;
@@ -86,4 +86,5 @@
             50% { transform: scale(1.2); }
 
         }
+
 
