@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #C8A2C8;
+            box-sizing: border-box;
+        }
+        
+        .img1 {
+            border-radius: 10px;
+        }
+
+        /* Para garantir que os cards se comportem bem em telas pequenas */
+        @media (max-width: 600px) {
+        .card-hover, .card-card {
+            flex: 0 0 40%; /* Mantém dois cards por linha */            
+            overflow-x: hidden; /* Evita rolagem horizontal */
+        }
+    }
+
+        @media (max-width: 600px) {
+             h1, h2 {
+        font-size: 65%; /* Ajusta a fonte para 65% do tamanho original */
+        }
+    }
+
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .gradient-bg {
+            background: linear-gradient(#a51fa5);
+        }
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .modal-overlay {
+            backdrop-filter: blur(5px);
+        }
+        .success-message {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, #50a78a, #2d9f7b);
+            color: white;
+            padding: 16px 24px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            z-index: 1000;
+            transform: translateX(400px);
+            transition: transform 0.3s ease;
+            max-width: 300px;
+            font-weight: 600;
+        }
+        .success-message.show {
+            transform: translateX(0);
+        }
+
+        .gold-text {
+            background: linear-gradient(135deg, #d4af37 0%, #ffd700 50%, #b8860b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.3s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .cart-badge {
+            animation: bounce 0.5s ease-in-out;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
