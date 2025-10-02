@@ -31,7 +31,7 @@
                 display: none; /* Esconde o título no celular */
             }
             .logo {
-                width: 200px; /* Aumenta o tamanho da logo no celular */
+                width: 400px; /* Aumenta o tamanho da logo no celular */
             }
         }
         
@@ -116,6 +116,7 @@
             50% { transform: scale(1.2); }
 
         }
+
 
 
 
