@@ -30,6 +30,9 @@
             .title {
                 display: none; /* Esconde o título no celular */
             }
+            .logo {
+                width: 200px; /* Aumenta o tamanho da logo no celular */
+            }
         }
         
         .img1 {
@@ -113,6 +116,7 @@
             50% { transform: scale(1.2); }
 
         }
+
 
 
 
