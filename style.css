@@ -4,6 +4,33 @@
             background: #c5c2e3;
             box-sizing: border-box;
         }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #f8f8f8;
+        }
+
+        .logo {
+            width: 100px; /* Ajuste conforme necessário */
+        }
+        .title {
+            display: block;
+        }
+        .cart-button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .title {
+                display: none; /* Esconde o título no celular */
+            }
+        }
         
         .img1 {
             border-radius: 10px;
@@ -86,6 +113,7 @@
             50% { transform: scale(1.2); }
 
         }
+
 
 
 
