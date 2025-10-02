@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
         body {
             font-family: 'Poppins', sans-serif;
-            background: purple-200;
+            background: #c5c2e3;
             box-sizing: border-box;
         }
         
@@ -31,7 +31,7 @@
             box-shadow: 0 20px 40px rgba(0,0,0,0.1);
         }
         .gradient-bg {
-            background: linear-gradient(purple-400);
+            background: linear-gradient(#9d4edd);
         }
         .pulse-animation {
             animation: pulse 2s infinite;
@@ -86,5 +86,6 @@
             50% { transform: scale(1.2); }
 
         }
+
 
 
